@@ -2,6 +2,8 @@ body {
     background-color: #fdfbe3;
 }
 .container {
+    margin-top: 1rem;
+    padding: 0.3rem;
     background-color: white;
     border: #ccc solid 1px;
 }
