@@ -1,21 +1,38 @@
 body {
-    background-color: #fdfbe3;
+    background-color: #d7d7d7;
 }
-.container {
+.wrapper.container {
     margin-top: 1rem;
-    padding: 0.3rem;
+    padding: 0.2rem;
     background-color: white;
-    border: #ccc solid 1px;
+    border: #888 solid 1px;
 }
 
 .breadcrumb {
     background-color: rgba(255, 255, 255, 0.3);
     font-size: .8rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
     }
 
 .jumbotron {
     padding-bottom: 0.01rem;
+    background-image: url("../images/startsida.jpg");
+    background-size: cover;
 }
+
+
 .card-deck {
-    margin-bottom: 2rem;
+    margin: 0 0 0 0;
+}
+
+.card {
+    background-color: #eee;
+    
+}
+.container .article {
+    margin-top: 2rem;
+}
+.article .card {
+    padding: 0.5rem;
 }
