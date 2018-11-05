@@ -28,11 +28,21 @@ body {
 
 .card {
     background-color: #eee;
-    
 }
 .container .article {
     margin-top: 2rem;
 }
 .article .card {
     padding: 0.5rem;
+    font-size: .9em;
+}
+.card-footer {
+    margin-top: 1rem;
+    font-size: 0.8em;
+}
+
+.blockquote-footer, .line {
+    border-top: 1px solid #eee;
+    font-size: 0.7em;
+
 }
