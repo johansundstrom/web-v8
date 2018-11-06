@@ -1,0 +1,54 @@
+body {
+  background-color: #d7d7d7;
+}
+.wrapper.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  background-color: white;
+  border: #bbb solid 2px;
+}
+
+.breadcrumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 0.8rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.jumbotron {
+  padding-bottom: 0.01rem;
+  background-image: url("../images/startsida.jpg");
+  background-size: cover;
+}
+
+.card-deck {
+  margin: 0 0 0 0;
+}
+
+.card {
+  background-color: #eee;
+}
+.container .article {
+  margin-top: 2rem;
+}
+.article .card {
+  padding: 0.5rem;
+  font-size: 0.9em;
+}
+.card-footer {
+  border-top: #666 solid 4px;
+  margin-top: 1rem;
+  font-size: 0.8em;
+  background-color: #888;
+  color: white;
+}
+
+.blockquote-footer,
+.line {
+  border-top: 1px solid #eee;
+  font-size: 0.7em;
+}
+.rightside {
+  border-left: #eee solid 1px;
+}
