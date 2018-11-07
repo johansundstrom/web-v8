@@ -18,7 +18,7 @@ body {
 
 .jumbotron {
   padding-bottom: 0.01rem;
-  background-image: url("../images/startsida.jpg");
+  background-image: url("/assets/images/earth.jpg");
   background-size: cover;
 }
 
