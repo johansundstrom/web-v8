@@ -7,3 +7,13 @@
 .container h2 {
     font-size: 1.5rem;
 }
+.open {
+    text-decoration: underline;
+    color: red;
+    background-color: yellow;
+    cursor: pointer;
+} 
+.closed {
+    color: blue;
+    background-color: red;
+}
