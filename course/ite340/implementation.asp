@@ -68,87 +68,15 @@
             </div>
         </nav>
 
-        <!-- Jumbotron-->
-        <div class="jumbotron jumbotron-fluid bg-warning">
-            <div class="container">
-                <h1 class="display-4">Verksamhets<wbr>förlagd Informations<wbr>design<span class="text-muted"> 15 hp</span></h1>
-                <p class="lead">ITE340 - Officiell webbplats</p>
-            </div>
-            <!-- breadcrumbs-->
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/"><span class="oi oi-home"></span></a></li>
-                <li class="breadcrumb-item"><a href="../">Kurser</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="./">ITE340</a></li>
-            </ol>
-        </div>
+        <%                             
+        if session("preferredLanguageSv") then 
+            Server.Execute(left(thispage,InStr(thispage, ".")-1) & "-sv" & ".asp")
+        else 
+            Server.Execute(left(thispage,InStr(thispage, ".")-1) & "-en" & ".asp")
+        end if 
+        %>
 
-
-        <!-- cards -->
-        <div class="card-deck">
-            <div class="card">
-                <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body">
-                    <h4 class="card-title">Kurs<wbr>info</h4>
-                        <p class="card-text">Om kursen och vad du behöver veta för att genomföra den</p>
-                        <a href="#" class="btn btn-info">Läs mer >></a>
-                </div>
-            </div>
-            <div class="card">
-                <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body">
-                    <h4 class="card-title">Aka<wbr>demiskt</h4>
-                        <p class="card-text">Akademiska krav, tips och råd inför studierna</p>
-                        <a href="#" class="btn btn-info">Läs mer >></a>
-                </div>
-            </div>
-            <div class="card">
-                <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body">
-                    <h4 class="card-title">Uppgifter</h4>
-                    <p class="card-text">Beskrivning av samliga uppgifter inklusive examinationsuppgifterna</p>
-                    <a href="#" class="btn btn-info">Läs mer >></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- main -->
-        <div class="container article">
-            <div class="row">
-                <div class="col-lg-9">
-                    <p class="lead">Välkommen till en spännande kurs där du under eget ansvar får vara på en
-                        arbetsplats eller undersöka din bransch. Detta är kursens officiella kurswebbplats. Här hittar
-                        du information om kursen som t.ex. dess mål, metod och examination. Denna information är ditt
-                        kurs-PM.</p>
-                    <p>Detta är ditt tillfälle att på ett personligt plan orientera dig om ditt framtida yrke. Kursen
-                        genomförs praktiskt genom att du är förlagd till en eller flera platser och genomför studien
-                        enligt givna uppgifter.</p>
-                    <p>Möjlighet finns att du mixar och genomför kursen på flera platser. Stäm av med kursansvarig
-                        först. Enda kraven är att platserna du besöker är inom din inriktning.</p>
-                    <p class="blockquote-footer  line">Publicerad av <cite title="Source Title">Johan Sundström</cite><br>
-                            Uppdaterades <cite title="Source Title">2018-09-10 16:19:29</cite></p>
-                </div>
-                <div class="col-sm-3 rightside">
-                    <p class="lead">Bra att veta</p>
-                    <div class="card bg-info text-white">
-                        <p>Om du undrar över något är du välkommen att ringa kursansvarig på 016-15 3639</p>
-                    </div>
-                    <br>
-                    <div class="card bg-info text-white">
-                        <p>Kursen startar den 12 november 2018 med workshop, upprop och registrering enligt given
-                            instruktion på denna webbplats</p>
-                    </div>
-                    <br>
-                    <div class="card bg-info text-white">
-                        <p>Switch to English at the top in the orange field</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
+        
         </div>
         <div class="card-footer myfooter">
             Mälardalens högskola | Box 883 | 721 23 Västerås/Eskilstuna | 021-10 13 00, 016-15 36 00 | info@mdh.se | Om
