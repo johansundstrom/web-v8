@@ -82,6 +82,7 @@
             </ol>
         </div>
 
+        <!-- Main-->
 
         <!-- cards -->
         <div class="card-deck">
@@ -111,7 +112,7 @@
             </div>
         </div>
 
-        <!-- main -->
+        <!-- content -->
         <div class="container article">
             <div class="row">
                 <div class="col-lg-9">
