@@ -23,8 +23,9 @@ body {
   color: white;
   text-shadow: -2px 0 6px #444, 0 2px 6px #444, 2px 0 6px #444, 0 -2px 6px #444;
 }  
-.text-muted {
-  color: red;
+.jumbotron .container .lead {
+  color: white;
+  text-shadow: -2px 0 6px #444, 0 2px 6px #444, 2px 0 6px #444, 0 -2px 6px #444;
 }
 .jumbotron {
   padding-top: .2rem;
