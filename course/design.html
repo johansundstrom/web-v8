@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Zoomin</title>
+    <title>Designkurser</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +13,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/theme.css">
     <link rel="stylesheet" href="css/theme.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css" />
 </head>
 
@@ -26,17 +27,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="course/">Kurser</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="event/">Event</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="internal/">Internt</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kurser</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId1">
+                                        <a class="dropdown-item" href="kit126/">KIT126</a>
+                                        <a class="dropdown-item" href="ite340/">ITE340</a>
+                                    </div>
+                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="event/">Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="internal/">Internt</a>
+                            </li>
+                        </ul>
                 <ul class="navbar-nav mr-left mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#">English</a>
@@ -52,50 +57,48 @@
         <div class="jumbotron jumbotron-fluid bg-warning">
             <!-- breadcrumbs-->
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/"><span class="oi oi-home"></span></a></li>
-            </ol>
-            <!-- /breadcrumbs-->
+                    <li class="breadcrumb-item"><a href="/"><span class="oi oi-home"></span></a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="/course">Kurser</a></li>
+                </ol>
+                <!--/breadcrumb-->
             <div class="container">
-
-                <h1 class="display-4">ZOOMIN - IDT</h1>
+                <h1 class="display-4">Designkurser</h1>
                 <p class="lead">Intern Webbserver</p>
             </div>
         </div>
 
 
-        <!-- cards -->
-        <div class="card-deck">
-            <div class="card">
-                <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body">
-                    <h4 class="card-title">Kurser</h4>
-                        <p class="card-text">Kurser som ges på Zoomin</p>
-                        <a href="course/" class="btn btn-info">Se kurser >></a>
-                </div>
-            </div>
-            <div class="card">
-                <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body">
-                    <h4 class="card-title">Event</h4>
-                        <p class="card-text">Event och kampanjer</p>
-                        <a href="#" class="btn btn-info">Titta in >></a>
-                </div>
-            </div>
-            <div class="card">
-                <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body">
-                    <h4 class="card-title">Internt</h4>
-                    <p class="card-text">Personalingång</p>
-                    <a href="#" class="btn btn-info">Login >></a>
-                </div>
-            </div>
-        </div>
 
 
         <div class="container article">
             <div class="row">
                 <div class="col-lg-9">
-                    <p class="lead">ZOOMIN är en webbserver på IDT som främst används som kurswebbserver.</p>
+                    <p class="lead">Designkurser som ges på ZOOMIN</p>
+
+                    <table class="table table-sm table-hover">
+                        <thead>
+                            <tr class="bg-warning">
+                            <th scope="col">Kurskod</th>
+                            <th scope="col">Kursnamn</th>
+                            <th scope="col">HP</th>
+                            <th scope="col">Kursansvarig</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="window.location.assign('kit126/');">
+                            <td scope="row"><a href="kit126/">KIT126</a></th>
+                            <td><a href="kit126/">Informationsdesign - Webbdesign</a></td>
+                            <td>7,5</td>
+                            <td>Johan Sundström</td>
+                            </tr>
+                            <tr onclick="window.location.assign('ite340/');">
+                            <td scope="row"><a href="ite340/">ITE340</a></th>
+                            <td><a href="ite340/">Verksamhetsförlagd Informationsdesign</a></td>
+                            <td>15</td>
+                            <td>Johan Sundström</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     
                     <p class="blockquote-footer  line">Publicerad av <cite title="Source Title">Johan Sundström</cite><br>
                             Uppdaterades <cite title="Source Title">2018-09-10 16:19:29</cite></p>
@@ -103,7 +106,7 @@
                 <div class="col-sm-3 rightside">
                     <p class="lead">Bra att veta</p>
                     <div class="card bg-info text-white">
-                        <p>Om du undrar över något är du välkommen att ringa kursansvarig på 016-15 3639</p>
+                        <p>Saknas en kurs? Kontakta kursansvarige</p>
                     </div>
                     <br>
                     <div class="card bg-info text-white">

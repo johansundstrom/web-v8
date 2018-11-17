@@ -27,16 +27,22 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="course/">Kurser</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="event/">Event</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="internal/">Internt</a>
-                            </li>
-                        </ul>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kurser</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId1">
+                                <a class="dropdown-item" href="design.html">Designkurser</a>
+                                <a class="dropdown-item" href="engineer.html">Ingenjörskurser</a>
+                                <a class="dropdown-item" href="#">Masterkurser</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/event">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/internal">Internt</a>
+                        </li>
+                    </ul>
                 <ul class="navbar-nav mr-left mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#">English</a>
@@ -50,15 +56,16 @@
 
         <!-- Jumbotron-->
         <div class="jumbotron jumbotron-fluid bg-warning">
-            <div class="container">
-                <h1 class="display-4">Kurser</h1>
-                <p class="lead">Intern Webbserver</p>
-            </div>
             <!-- breadcrumbs-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/"><span class="oi oi-home"></span></a></li>
                 <li class="breadcrumb-item" aria-current="page"><a href="/course">Kurser</a></li>
             </ol>
+            <!--/breadcrumb-->
+            <div class="container">
+                <h1 class="display-4">Kurser</h1>
+                <p class="lead">Intern Webbserver</p>
+            </div>
         </div>
 
 
@@ -68,25 +75,34 @@
                 <!--img class="card-img-top" src="images/example.jpg" alt=""-->
                 <div class="card-body bg-warning">
                     <h4 class="card-title">Informationsdesign</h4>
-                        <p class="card-text">Designkurser</p>
-                        <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Designkurser
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <a class="dropdown-item text-monospace" href="kit126/">KIT126 | Informationsdesgn - Webbdesign</a>
-                                  <a class="dropdown-item text-monospace" href="ite340/">ITE340 | Verksamhetsförlagd Informationsdesign</a>
-                                  <a class="dropdown-item text-monospace" href="ite118/">ITE118</a>
-                                </div>
-                              </div>
+                    <p class="card-text">Designkurser</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Designkurser
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item text-monospace" href="kit126/">KIT126 | Informationsdesgn - Webbdesign</a>
+                            <a class="dropdown-item text-monospace" href="ite340/">ITE340 | Verksamhetsförlagd Informationsdesign</a>
+                            <a class="dropdown-item text-monospace" href="ite118/">ITE118</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <!--img class="card-img-top" src="images/example.jpg" alt=""-->
                 <div class="card-body bg-success">
-                    <h4 class="card-title">Civilingenjör</h4>
-                        <p class="card-text">Akademiska krav, tips och råd inför studierna</p>
-                        <a href="#" class="btn btn-secondary">Läs mer >></a>
+                    <h4 class="card-title">Ingenjör</h4>
+                    <p class="card-text">Ingenjörskurser</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ingenjörskurser
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item text-monospace" href="kit126/">KIT126 | Informationsdesgn - Webbdesign</a>
+                            <a class="dropdown-item text-monospace" href="ite340/">ITE340 | Verksamhetsförlagd Informationsdesign</a>
+                            <a class="dropdown-item text-monospace" href="ite118/">ITE118</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
@@ -103,10 +119,7 @@
         <div class="container article">
             <div class="row">
                 <div class="col-lg-9">
-                    <p class="lead">Välkommen till en spännande kurs där du under eget ansvar får vara på en
-                        arbetsplats eller undersöka din bransch. Detta är kursens officiella kurswebbplats. Här hittar
-                        du information om kursen som t.ex. dess mål, metod och examination. Denna information är ditt
-                        kurs-PM.</p>
+                    <p class="lead">Vissa kurser använder ZOOMIN som plattform för kursinformation. Mälardalens högskola använder också plattformen Canvas. Om du inte hittar din kurs här, gå till MDH Canvas.</p>
                     <p>Detta är ditt tillfälle att på ett personligt plan orientera dig om ditt framtida yrke. Kursen
                         genomförs praktiskt genom att du är förlagd till en eller flera platser och genomför studien
                         enligt givna uppgifter.</p>
@@ -115,21 +128,7 @@
                     <p class="blockquote-footer  line">Publicerad av <cite title="Source Title">Johan Sundström</cite><br>
                             Uppdaterades <cite title="Source Title">2018-09-10 16:19:29</cite></p>
                 </div>
-                <div class="col-sm-3 rightside">
-                    <p class="lead">Bra att veta</p>
-                    <div class="card bg-info text-white">
-                        <p>Om du undrar över något är du välkommen att ringa kursansvarig på 016-15 3639</p>
-                    </div>
-                    <br>
-                    <div class="card bg-info text-white">
-                        <p>Kursen startar den 12 november 2018 med workshop, upprop och registrering enligt given
-                            instruktion på denna webbplats</p>
-                    </div>
-                    <br>
-                    <div class="card bg-info text-white">
-                        <p>Switch to English at the top in the orange field</p>
-                    </div>
-                </div>
+                
             </div>
 
 

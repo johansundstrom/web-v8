@@ -68,15 +68,6 @@
             </div>
         </nav>
 
-<<<<<<< HEAD
-        <%                             
-        if session("preferredLanguageSv") then 
-            Server.Execute(left(thispage,InStr(thispage, ".")-1) & "-sv" & ".asp")
-        else 
-            Server.Execute(left(thispage,InStr(thispage, ".")-1) & "-en" & ".asp")
-        end if 
-        %>
-=======
         <!-- Jumbotron-->
         <div class="jumbotron jumbotron-fluid bg-warning">
             <div class="container">
@@ -91,7 +82,6 @@
             </ol>
         </div>
 
-        <!-- Main-->
 
         <!-- cards -->
         <div class="card-deck">
@@ -121,7 +111,7 @@
             </div>
         </div>
 
-        <!-- content -->
+        <!-- main -->
         <div class="container article">
             <div class="row">
                 <div class="col-lg-9">
@@ -158,9 +148,7 @@
 
 
 
->>>>>>> origin
 
-        
         </div>
         <div class="card-footer myfooter">
             Mälardalens högskola | Box 883 | 721 23 Västerås/Eskilstuna | 021-10 13 00, 016-15 36 00 | info@mdh.se | Om

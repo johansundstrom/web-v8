@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Zoomin</title>
+    <title>ITE340</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,17 +26,37 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="course/">Kurser</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="event/">Event</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="internal/">Internt</a>
-                            </li>
-                        </ul>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kursinfo</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId1">
+                            <a class="dropdown-item" href="syllabus.html">Officiell kursplan</a>
+                            <a class="dropdown-item" href="#">Genomförande</a>
+                            <a class="dropdown-item" href="#">Lärandemål</a>
+                            <a class="dropdown-item" href="#">Litteratur</a>
+                            <a class="dropdown-item" href="#">Kontakt</a>
+                        </div>
+                    </li>
+                                        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Akademiskt</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a class="dropdown-item" href="#">Referenssystem</a>
+                            <a class="dropdown-item" href="#">Källkritik</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Uppgifter</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                            <a class="dropdown-item" href="#">Rapport PRO1</a>
+                            <a class="dropdown-item" href="#">Seminarium SEM1</a>
+                            <a class="dropdown-item" href="#">Presentartionsordning</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item bg-success text-white" href="#">Lämna PM elektroniskt</a>
+                        </div>
+                    </li>
+                </ul>
                 <ul class="navbar-nav mr-left mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#">English</a>
@@ -48,58 +68,60 @@
             </div>
         </nav>
 
+<<<<<<< HEAD
+        <%                             
+        if session("preferredLanguageSv") then 
+            Server.Execute(left(thispage,InStr(thispage, ".")-1) & "-sv" & ".asp")
+        else 
+            Server.Execute(left(thispage,InStr(thispage, ".")-1) & "-en" & ".asp")
+        end if 
+        %>
+=======
         <!-- Jumbotron-->
         <div class="jumbotron jumbotron-fluid bg-warning">
             <div class="container">
-                <h1 class="display-4">Kurser</h1>
-                <p class="lead">Intern Webbserver</p>
+                <h1 class="display-4">Verksamhets<wbr>förlagd Informations<wbr>design<span class="text-muted"> 15 hp</span></h1>
+                <p class="lead">ITE340 - Officiell webbplats</p>
             </div>
             <!-- breadcrumbs-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/"><span class="oi oi-home"></span></a></li>
-                <li class="breadcrumb-item" aria-current="page"><a href="/course">Kurser</a></li>
+                <li class="breadcrumb-item"><a href="../">Kurser</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="./">ITE340</a></li>
             </ol>
         </div>
 
+        <!-- Main-->
 
         <!-- cards -->
         <div class="card-deck">
             <div class="card">
                 <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body bg-warning">
-                    <h4 class="card-title">Informationsdesign</h4>
-                        <p class="card-text">Designkurser</p>
-                        <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Designkurser
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <a class="dropdown-item text-monospace" href="kit126/">KIT126 | Informationsdesgn - Webbdesign</a>
-                                  <a class="dropdown-item text-monospace" href="ite340/">ITE340 | Verksamhetsförlagd Informationsdesign</a>
-                                  <a class="dropdown-item text-monospace" href="ite118/">ITE118</a>
-                                </div>
-                              </div>
+                <div class="card-body">
+                    <h4 class="card-title">Kurs<wbr>info</h4>
+                        <p class="card-text">Om kursen och vad du behöver veta för att genomföra den</p>
+                        <a href="#" class="btn btn-info">Läs mer >></a>
                 </div>
             </div>
             <div class="card">
                 <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body bg-success">
-                    <h4 class="card-title">Civilingenjör</h4>
+                <div class="card-body">
+                    <h4 class="card-title">Aka<wbr>demiskt</h4>
                         <p class="card-text">Akademiska krav, tips och råd inför studierna</p>
-                        <a href="#" class="btn btn-secondary">Läs mer >></a>
+                        <a href="#" class="btn btn-info">Läs mer >></a>
                 </div>
             </div>
             <div class="card">
                 <!--img class="card-img-top" src="images/example.jpg" alt=""-->
-                <div class="card-body bg-danger">
-                    <h4 class="card-title">Master</h4>
+                <div class="card-body">
+                    <h4 class="card-title">Uppgifter</h4>
                     <p class="card-text">Beskrivning av samliga uppgifter inklusive examinationsuppgifterna</p>
-                    <a href="#" class="btn btn-secondary">Läs mer >></a>
+                    <a href="#" class="btn btn-info">Läs mer >></a>
                 </div>
             </div>
         </div>
 
-
+        <!-- content -->
         <div class="container article">
             <div class="row">
                 <div class="col-lg-9">
@@ -136,7 +158,9 @@
 
 
 
+>>>>>>> origin
 
+        
         </div>
         <div class="card-footer myfooter">
             Mälardalens högskola | Box 883 | 721 23 Västerås/Eskilstuna | 021-10 13 00, 016-15 36 00 | info@mdh.se | Om
